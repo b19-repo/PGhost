@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PGhost</title>
+    <link rel="stylesheet" href="node_modules/electron-tabs/electron-tabs.css">
+	<style>
+	.etabs-tab{
+		border-radius: 50px 50px 20px 20px!important;
+	}
+	</style>
+</head>
+
+<body style="margin:0">
+
+<div class="etabs-tabgroup">
+    <div class="etabs-tabs"></div>
+    <div class="etabs-buttons"></div>
+</div>
+
+<div class="etabs-views"></div>
+<script>
+    const {ipcRenderer} = require('electron');
+	const TabGroup = require("electron-tabs");
+	let tabGroup = new TabGroup();
+
+    ipcRenderer.on('set-url', (event, arg) => {
+        tabGroup.addTab({
+            title: "PGhost",
+            src: arg + 'ghost',
+            visible: true,
+            active: true
+        });
+		
+		webViewa = document.getElementsByClassName('etabs-view');
+		registerTab(webViewa[webViewa.length - 1]);
+    });
+	
+	function registerTab(webView){
+		webView.addEventListener('new-window', function (e) {
+			tabGroup.addTab({
+				title: "PGhost",
+				src: e.url,
+				visible: true,
+				active: true
+			});
+			
+			webView.addEventListener('tab-removed', function (e) {
+				webView.removeEventListener('new-window');
+				webView.removeEventListener('tab-removed');
+			});
+			
+			webViewa = document.getElementsByClassName('etabs-view');
+			
+			registerTab(webViewa[webViewa.length - 1]);
+		});
+	}
+</script>
+</body>
+</html>

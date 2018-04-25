@@ -1,0 +1,23 @@
+aws-sdk:
+This game is using aws-sdk (https://aws.amazon.com/sdk-for-node-js/) by Amazon Web Services, Inc. or its affiliates. All rights reserved. under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+bson-objectid:
+This game is using bson-objectid (https://www.npmjs.com/package/bson-objectid) by williamkapke under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+caseless:
+This game is using caseless (https://www.npmjs.com/package/caseless) by mikeal, nylen, simov under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+forever-agent:
+This game is using forever-agent (https://www.npmjs.com/package/forever-agent) by mikeal, nylen, simov under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+oauth-sign:
+This game is using oauth-sign (https://www.npmjs.com/package/oauth-sign) by mikeal, nylen, simov under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+request:
+This game is using request (https://www.npmjs.com/package/request) by fredkschott, mikeal, nylen, simov under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+detect-libc:
+This game is using detect-libc (https://www.npmjs.com/package/detect-libc) by lovell under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
+
+tunnel-agent:
+This game is using tunnel-agent (https://www.npmjs.com/package/tunnel-agent) by fredkschott, mikeal, nylen, simov under the Apache 2.0 license(http://www.apache.org/licenses/LICENSE-2.0.html). 
